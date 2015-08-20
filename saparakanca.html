@@ -29,7 +29,6 @@
 <meta name="text:Number of Tweets" content="3" />
 <meta name="text:Reblogged Title" content="Reblogged from">
 <meta name="text:Facebook" content="">
-<meta name="text:Twitter" content="">
 <meta name="text:Google Plus" content="">
 <meta name="text:Instagram" content="">
 <meta name="text:Pinterest" content="">
@@ -457,7 +456,7 @@
                     {block:ifSocialHubHeader}<h3 class="widget-title">{text:Social Hub Header}</h3>{/block:ifSocialHubHeader}
                     <ul class="social">
                         {block:ifFacebook}<li><a href="{text:Facebook}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank"><span class="ion-social-facebook"></span></a></li>{/block:ifFacebook}
-                        {block:ifTwitter}{block:Twitter}<li><a href="http://twitter.com/{TwitterUsername}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank"><span class="ion-social-twitter"></span></a></li>{/block:Twitter}{/block:ifTwitter}
+                        {block:Twitter}<li><a href="http://twitter.com/{TwitterUsername}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank"><span class="ion-social-twitter"></span></a></li>{/block:Twitter}
                         {block:ifGooglePlus}<li><a href="{text:Google Plus}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Google+" target="_blank"><span class="ion-social-googleplus"></span></a></li>{/block:ifGooglePlus}
                         {block:ifInstagram}<li><a href="{text:Instagram}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Instagram" target="_blank"><span class="ion-social-instagram"></span></a></li>{/block:ifInstagram}
                         {block:ifPinterest}<li><a href="{text:Pinterest}" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Pinterest" target="_blank"><span class="ion-social-pinterest"></span></a></li>{/block:ifPinterest}
