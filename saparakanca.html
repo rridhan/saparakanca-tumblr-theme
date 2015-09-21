@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
+<html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -54,18 +54,20 @@
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 <!-- Theme Core CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,300|Ubuntu:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,300|Ubuntu:400,300">
 <!-- Theme Stylesheet -->
-<link href="https://cdn.rawgit.com/rridhan/Plugins/master/css/saparakanca.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://static.tumblr.com/ht0jnpr/mEqnv0t8f/saparakanca.min.css" media="all">
 <style type="text/css">
+/* Custom CSS */
 {CustomCSS}
 </style>
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<script src="https://cdn.rawgit.com/rridhan/Plugins/master/js/modernizr-custom.js"></script>
 </head>
 <body>
 <div class="container">
@@ -485,28 +487,16 @@
 			<li><a href="{BlogURL}">Home</a></li>
 			{block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
 			<li><a href="{BlogURL}/archive">Archive</a></li>
-    		{block:AskEnabled}<li><a href="{BlogURL}/ask">{AskLabel}</a></li>{/block:AskEnabled}
-    		{block:SubmissionsEnabled}<li><a href="{BlogURL}/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+			{block:AskEnabled}<li><a href="{BlogURL}/ask">{AskLabel}</a></li>{/block:AskEnabled}
+			{block:SubmissionsEnabled}<li><a href="{BlogURL}/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
 		</ul>
 	</nav>
 </div>
 <!-- Javascript -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.rawgit.com/rridhan/Plugins/master/js/modernizr-custom.js"></script>
-<script src="http://static.tumblr.com/ht0jnpr/Gybnte4fi/saparakanca.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.rawgit.com/rridhan/photoset-grid/master/jquery.photoset-grid.min.js"></script>
-<script type="text/javascript">
-$('.photoset-grid').photosetGrid({
-    gutter: '5px',
-    
-    onInit: function(){},
-    onComplete: function(){
-        $('.photoset-grid');
-    }
-});
-$('[rel=tooltip]').tooltip(); 
-</script>
+<script src="http://static.tumblr.com/ht0jnpr/Mipnv0txe/saparakanca.js"></script>
 {block:Twitter}
     <script type="text/javascript" src="/tweets.js"></script>
 {/block:Twitter}
@@ -522,6 +512,5 @@ $('[rel=tooltip]').tooltip();
     })();
 </script>
 {/block:IfGoogleAnalyticsID}
-<script src="https://cdn.rawgit.com/rridhan/Plugins/master/js/plugins-sprknc.js"></script>
 </body>
 </html>
