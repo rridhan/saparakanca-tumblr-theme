@@ -17,8 +17,8 @@
 {block:Hidden}
 <!-- Theme Options -->
 <meta name="if:Show About" content="1">
-<meta name="if:Show Flickr" content="1">
-<meta name="if:Show Tweet" content="1">
+<meta name="if:Show Flickr" content="0">
+<meta name="if:Show Tweet" content="0">
 <meta name="if:Show Follow" content="0">
 <meta name="if:Show Likes" content="0">
 <meta name="if:Show Social Hub" content="1">
@@ -35,8 +35,8 @@
 <meta name="text:Reddit" content="">
 <meta name="text:Linkedin" content="">
 <meta name="text:Vimeo" content="">
-<meta name="text:Flickr Username" content="ridhantigabelas">
-<meta name="text:Flickr ID" content="47157105@N08">
+<meta name="text:Flickr Username" content="">
+<meta name="text:Flickr ID" content="">
 <meta name="text:Disqus Shortname" content="">
 <meta name="text:Google Analytics ID" content="">
 {/block:Hidden}
@@ -503,7 +503,7 @@
 {block:IfGoogleAnalyticsID}
 <script type="text/javascript">
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{GoogleAnalyticsID}']);
+    _gaq.push(['_setAccount', '{text:Google Analytics ID}']);
     _gaq.push(['_trackPageview']);
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
